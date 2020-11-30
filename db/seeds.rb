@@ -1,4 +1,6 @@
 # Entry.create(:title => "my first entry", :content => "this is an encrypted entry only i can access", :user_id => 1)
 # Entry.create(:title => "my second entry", :content => "this is an encrypted entry only i can access 2", :user_id => 1)
-Entry.create(:title => "my first entry", :content => "this is an encrypted entry only i can access", :user_id => 2)
-Entry.create(:title => "my second entry", :content => "this is an encrypted entry only i can access 2", :user_id => 2)
+# Entry.create(:title => "my first entry", :content => "this is an encrypted entry only i can access", :user_id => 2)
+# Entry.create(:title => "my second entry", :content => "this is an encrypted entry only i can access 2", :user_id => 2)
+# Entry.create(:title => "Sample Entry 1", :content => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", :user_id => 5)
+# Entry.create(:title => "Sample Entry 2", :content => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.", :user_id => 5)
