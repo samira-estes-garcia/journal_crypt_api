@@ -4,16 +4,11 @@ class EntriesController < ApplicationController
 
   # GET /entries
   def index
-    @entries = Entry.all
-    render json: @entries
-    # if params[:user_id]
-    #   @user = User.find(params[:user_id])
-    #   @entries = @user.entries
-    #   render json: @entries
-    # else
-    #   @entries = Entry.all
-    #   render json: @entries
-    # end
+    @user = User.find_by_id(params[:id])
+    if @user = current_user
+      @entries = @user.entries
+      render json: @entries
+    end
   end
 
   # GET /entries/1
@@ -24,9 +19,8 @@ class EntriesController < ApplicationController
   # POST /entries
   def create
     @entry = Entry.new(entry_params)
-
     if @entry.save
-      render json: @entry, status: :created, location: @entry
+      render json: EntrySerializer.new(@entry), status: :created, location: @entry
     else
       render json: @entry.errors, status: :unprocessable_entity
     end
